@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="@string/time_period">
+            <menu>
+                <item
+                    android:id="@+id/today"
+                    android:icon="@drawable/clock"
+
+                    android:title="@string/today" />
+                <item
+                    android:id="@+id/last_week"
+                    android:icon="@drawable/clock"
+                    android:title="@string/last_week" />
+
+                <item
+                    android:id="@+id/last_month"
+                    android:icon="@drawable/clock"
+                    android:title="@string/last_month" />
+
+                <item
+                    android:id="@+id/last_year"
+                    android:icon="@drawable/clock"
+                    android:title="@string/last_year" />
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share"
+                android:title="@string/share" />
+
+            <!--Will be enable in next release-->
+            <!--<item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/feedback"
+                android:title="@string/feedback" />-->
+        </menu>
+    </item>
+
+</menu>

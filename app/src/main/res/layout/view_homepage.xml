@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/transparent">
+    </RelativeLayout>
+
+    <info.techienotes.toprepos.utils.AutoCompleteRegular
+        android:id="@+id/auto_complete_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:maxLines="1"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:textSize="@dimen/text_size16"
+        android:hint="@string/search_language"
+        android:paddingLeft="@dimen/size_16"
+        android:paddingRight="@dimen/size_16" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:visibility="gone" />
+
+    <info.techienotes.toprepos.utils.TextViewRegular
+        android:id="@+id/tv_no_results"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_results_found"
+        android:textSize="@dimen/text_size24"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/data_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

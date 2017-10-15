@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ic_time">&#xe900;</string>
+    <string name="ic_edit">&#xe901;</string>
+    <string name="ic_star">&#xe902;</string>
+    <string name="ic_fork">&#xe903;</string>
+</resources>

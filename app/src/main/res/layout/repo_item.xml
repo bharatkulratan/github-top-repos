@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <info.techienotes.toprepos.utils.TextViewBold
+        android:id="@+id/tv_repo_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_16"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:layout_marginStart="@dimen/size_16"
+        android:layout_marginTop="@dimen/size_8"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size18" />
+
+    <info.techienotes.toprepos.utils.TextViewRegular
+        android:id="@+id/tv_repo_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_repo_header"
+        android:layout_marginEnd="@dimen/size_16"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:layout_marginStart="@dimen/size_16"
+        android:layout_marginTop="@dimen/size_4"
+        android:text="@string/author_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size14" />
+
+
+    <info.techienotes.toprepos.utils.TextViewRegular
+        android:id="@+id/tv_repo_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_repo_user"
+        android:layout_marginEnd="@dimen/size_16"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:layout_marginStart="@dimen/size_16"
+        android:layout_marginTop="@dimen/size_4"
+        android:textColor="@color/black_trans_eighty"
+        android:textSize="@dimen/text_size14" />
+
+    <RelativeLayout
+        android:id="@+id/lay_repo_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_repo_description"
+        android:layout_marginBottom="@dimen/size_8"
+        android:layout_marginTop="@dimen/size_4">
+
+        <info.techienotes.toprepos.utils.TextViewRegular
+            android:id="@+id/tv_language"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_16"
+            android:layout_marginStart="@dimen/size_16"
+            android:textColor="@color/black_trans_eighty"
+            android:textSize="@dimen/text_size14" />
+
+        <info.techienotes.toprepos.utils.AppIcons
+            android:id="@+id/star_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_16"
+            android:layout_marginStart="@dimen/size_16"
+            android:layout_toEndOf="@id/tv_language"
+            android:layout_toRightOf="@id/tv_language"
+            android:text="@string/ic_star"
+            android:textColor="@color/black_trans_eighty"
+            android:textSize="@dimen/text_size16" />
+
+        <info.techienotes.toprepos.utils.TextViewRegular
+            android:id="@+id/tv_star_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_4"
+            android:layout_marginStart="@dimen/size_4"
+            android:layout_toEndOf="@id/star_icon"
+            android:layout_toRightOf="@id/star_icon"
+            android:textColor="@color/black_trans_eighty"
+            android:textSize="@dimen/text_size14" />
+
+        <info.techienotes.toprepos.utils.AppIcons
+            android:id="@+id/fork_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_16"
+            android:layout_marginStart="@dimen/size_16"
+            android:layout_toEndOf="@id/tv_star_info"
+            android:layout_toRightOf="@id/tv_star_info"
+            android:text="@string/ic_fork"
+            android:textColor="@color/black_trans_eighty"
+            android:textSize="@dimen/text_size16" />
+
+        <info.techienotes.toprepos.utils.TextViewRegular
+            android:id="@+id/tv_fork_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_4"
+            android:layout_marginStart="@dimen/size_4"
+            android:layout_toEndOf="@id/fork_icon"
+            android:layout_toRightOf="@id/fork_icon"
+            android:textColor="@color/black_trans_eighty"
+            android:textSize="@dimen/text_size14" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_trans_fifty"
+        android:paddingTop="@dimen/size_8" />
+
+</RelativeLayout>
